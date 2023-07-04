@@ -1,0 +1,361 @@
+/* Universal styles */
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    min-width: 320px;
+}
+
+h1, h2, h3, p, li, a {
+    line-height: 150%;
+}
+
+p .bold {
+    font-weight: 700;
+}
+
+p .italic {
+    font-style: italic;
+    font-weight: 300;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 86px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+ h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.content {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    gap: 3rem;
+    padding: 4.5rem 0rem 6rem 0rem;
+}
+
+@media only screen and (max-width: 450px)  {
+    html {
+        font-size: 20px;
+    }
+    .content {
+        gap: 2rem;
+        padding: 1.5rem 0.5rem 3rem 0.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    main {
+        margin-top: 80px;
+    }
+}
+
+/* HAEDER */
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 100;
+    justify-content: center;
+    background-color: hsla(220, 13%, 91%, 1);
+    top: 0;
+}
+
+header .content {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+
+.mobile {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav li {
+    margin-right: 2.5rem;
+}
+
+nav li:last-child {
+    margin-right: 0px;
+}
+
+nav li a {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-decoration-line: underline;
+    color: hsla(0, 0%, 0%, 1);
+}
+
+nav .logo {
+    aspect-ratio: 1;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: hsla(0, 0%, 100%, 1);
+}
+
+.mobile .menu {
+    background-image: url("../images/menu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2rem;
+    width: 2rem;
+}
+
+@media only screen and (max-width: 450px)  {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .mobile ul {
+        display: none;
+    }
+    header {
+        min-width: inherit;
+        width: auto;
+        justify-content: space-between;
+    }
+    header .content {
+        padding: 1rem;
+    }
+}
+
+
+/* ABOUT ME */
+.about {
+    display: flex;
+    width: 100%;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(220, 13%, 91%, 1);
+}
+
+.about .content {
+    flex-direction: row;
+    gap: 3.5625rem;
+}
+
+.about .profile-picture {
+    height: 20.375rem;
+    aspect-ratio: 1;
+    border-radius: 20.375rem;
+    background-color: hsla(0, 0%, 100%, 1);
+    background-image: url("../images/laptop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.about .aboutme p {
+    font-size: 1.875rem;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 450px)  {
+    .about .profile-picture {
+        height: 10rem;
+        border-radius: 10rem;
+    }
+    .about {
+        height: auto;
+    }
+    .about .content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .about .aboutme p {
+        font-size: 1rem;
+    }
+}
+
+/* PROJECTS */
+
+.projects {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 1);
+}
+
+.projects .projects-list {
+    display: inline-flex;
+    gap: 2.76rem;
+}
+
+.projects .project-card {
+    display: flex;
+    width: 15.625rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.projects .project-card .project-icon {
+    aspect-ratio: 1;
+    height: 10.9375rem;
+    border-radius: 10.9375rem;
+    background-color: hsla(220, 13%, 91%, 1);
+}
+
+.projects .project-card .project-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .project-card p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.projects .project-card .tags-list {
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+.projects .project-card .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border-radius: 1.5rem;
+    background-color:hsla(220, 14%, 96%, 1);
+    font-size: 0.875rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+
+}
+
+/* SKILLS */
+
+.skills {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-color: hsla(210, 20%, 98%, 1);
+}
+
+.skills .skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+}
+
+.skills .skill-card {
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    gap: 4.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid hsla(220, 13%, 91%, 1);
+    background-color: hsla(0, 0%, 100%, 1);
+    box-shadow: 8px 8px 0px 0px hsla(212, 28%, 17%, 1);
+}
+
+.skills .skill-card .skill-icon {
+    aspect-ratio: 1;
+    height: 15.3125rem;
+    border-radius: 15.3125rem;
+    background-color: hsla(220, 13%, 91%, 1);
+}
+
+.skills .skill-card .skill-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.skills .skill-card ul {
+    list-style-type: "*";
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* CONTACT */
+.contact button {
+    display: flex;
+    height: 6rem;
+    padding: 0.875rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: hsla(212, 28%, 17%, 1);
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    display: flex;
+    padding: 3rem 0rem 3rem 1.5rem;
+    align-items: flex-start;
+    background-color: hsla(212, 28%, 17%, 1);
+}
+
+footer .copyright {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: hsla(220, 13%, 91%, 1);
+}

@@ -2,16 +2,147 @@
 <html>
     <head>
         <title>Agn&egrave;s Labb&eacute; - portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./resources/css/styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
         <header>
-            <nav>
-            </nav>
+            <div class="content">
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><div class="logo"></div></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="mobile">
+                    <div class="logo"></div>
+                    <div class="menu"></div>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
-            <section>
-
+            <section id="about" class="about">
+                <div class="content">
+                    <div class="profile-picture"></div>
+                    <div class="aboutme">
+                        <h1># Hello, I am **Agnes**</h1>
+                        <p>
+                            I am a product developer. After a few years in product management, I’m back to development. 
+                            **<span class="bold">I'd like to master the whole product development process</span>**, and what better way between 
+                            product management and web development than to spend some time in _<span class="italic">product design</span>_
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="projects">
+                <div class="content">
+                    <h2>## Latest projects</h2>
+                    <div class="projects-list">
+                        <div class="project-card">
+                            <div class="project-icon"></div>
+                            <div class="project-description">
+                                <h3>> Project Title</h3>
+                                <p class="summary">A quick description of the project, just to give you something to look forward to.</p>
+                            </div>
+                            <ul class="tags-list">
+                                <li class="tag">Javascript</li>
+                                <li class="tag">CSS</li>
+                                <li class="tag">HTML</li>
+                            </ul>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-icon"></div>
+                            <div class="project-description">
+                                <h3>> Project Title</h3>
+                                <p class="summary">A quick description of the project, just to give you something to look forward to.</p>
+                            </div>
+                            <ul class="tags-list">
+                                <li class="tag">Javascript</li>
+                                <li class="tag">CSS</li>
+                                <li class="tag">HTML</li>
+                            </ul>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-icon"></div>
+                            <div class="project-description">
+                                <h3>> Project Title</h3>
+                                <p class="summary">A quick description of the project, just to give you something to look forward to.</p>
+                            </div>
+                            <ul class="tags-list">
+                                <li class="tag">Javascript</li>
+                                <li class="tag">CSS</li>
+                                <li class="tag">HTML</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="skills">
+                <div class="content">
+                    <h2>## Skills</h2>
+                    <div class="skills-list">
+                        <div class="skill-card">
+                            <div class="skill-icon"></div>
+                            <div class="skill-description">
+                                <h3>> Skill title</h3>
+                                <ul>
+                                    <li>skill description 1</li>
+                                    <li>skill description 2</li>
+                                    <li>skill description 3</li>
+                                    <li>skill description 4</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"></div>
+                            <div class="skill-description">
+                                <h3>> Skill title</h3>
+                                <ul>
+                                    <li>skill description 1</li>
+                                    <li>skill description 2</li>
+                                    <li>skill description 3</li>
+                                    <li>skill description 4</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"></div>
+                            <div class="skill-description">
+                                <h3>> Skill title</h3>
+                                <ul>
+                                    <li>skill description 1</li>
+                                    <li>skill description 2</li>
+                                    <li>skill description 3</li>
+                                    <li>skill description 4</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <div class="content">
+                    <h2>## Contact</h2>
+                    <button>hello@agneslabbe.com</button>
+                </div>
             </section>
         </main>
+        <footer>
+            <div class="copyright">// made by agneslabbe - 2023</div>
+        </footer>
     </body>
 </html>
