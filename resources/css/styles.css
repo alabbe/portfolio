@@ -78,6 +78,15 @@ h2 {
     h1 {
         font-size: 2rem;
     }
+    .content {
+        display: flex;
+        gap: 1.5rem;
+        margin: 0 1.5rem;
+        padding: 2.5rem 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* HAEDER */
@@ -93,7 +102,7 @@ header {
 header .content {
 }
 
-.desktop {
+.mobile {
     display: none;
 }
 
@@ -101,25 +110,39 @@ nav {
     border: 1px solid blue;
 }
 
-nav .desktop ul {
+.desktop {
+    height: 88px;
 }
 
-nav .desktop li {
+.desktop .nav-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.desktop ul {
+    display: inline-flex;
+    align-items: center;
+}
+
+.desktop li {
     margin-right: 2.5rem;
 }
 
-nav .desktop li:last-child {
+.desktop li:last-child {
     margin-right: 0px;
 }
 
-nav .desktop li a {
+.desktop li a {
     font-size: 1.25rem;
     font-weight: 300;
     text-decoration-line: underline;
     color: hsla(0, 0%, 0%, 1);
 }
 
-nav .logo {
+.logo {
     aspect-ratio: 1;
     height: 2rem;
     border-radius: 2rem;
@@ -139,6 +162,7 @@ nav .logo {
         display: none;
     }
     .mobile {
+        display: block;
         margin: 0 1rem;
     }
 
@@ -195,6 +219,13 @@ nav .logo {
     }
 }
 @media only screen and (min-width: 450px) and (max-width: 1024px)  {
+    .about .content {
+        flex-direction: row;
+    }
+    .about .profile-picture {
+        height: 15rem;
+        border-radius: 15rem;
+    }
     .about .aboutme p {
         font-size: 1.5rem;
     }
@@ -279,6 +310,16 @@ nav .logo {
     
 }
 
+@media only screen and (min-width: 450px) and (max-width: 1024px)  {
+    .projects .projects-list {
+        gap: 0.5rem;
+    }
+    .projects .project-card .project-icon {
+        height: 7rem;
+        border-radius: 7rem;
+    }
+}
+
 /* SKILLS */
 
 .skills {
@@ -344,6 +385,26 @@ nav .logo {
     }
 }
 
+@media only screen and (min-width: 450px) and (max-width: 1024px)  {
+    .skills .skills-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+    }
+    .skills .skill-card {
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+    .skills .skill-card .skill-icon {
+        height: 10rem;
+        border-radius: 10rem;
+    }
+    .skills .skill-card .skill-description {
+        gap: 0.5rem;
+    }
+}
+
 
 /* CONTACT */
 
@@ -372,14 +433,21 @@ nav .logo {
         padding: 0.5rem 0.5rem;
     }
 }
+@media only screen and (min-width: 450px) and (max-width: 1024px)  {
+    .contact button {
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+        height: 5rem;
+    }
+}
 
 /* FOOTER */
 
 footer {
-    width: 100%;
+    /* width: 100%;
     display: flex;
     padding: 3rem 0rem 3rem 1.5rem;
-    align-items: flex-start;
+    align-items: flex-start; */
     background-color: hsla(212, 28%, 17%, 1);
 }
 
@@ -397,5 +465,16 @@ footer .copyright {
     }
     footer .copyright {
         font-size: 0.75rem;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 1024px)  {
+    footer {
+        height: 120px;
+        align-items: center;
+        display: flex;
+    }
+    footer .copyright {
+        margin-left: 1.5rem;
     }
 }
